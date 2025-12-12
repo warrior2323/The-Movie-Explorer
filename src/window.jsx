@@ -5,7 +5,7 @@ const [ show , setShow ]=React.useState([])
 const [index , setIndex] = React.useState(0)
 
 React.useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eea241ecf85381fca961655918e8348a`)
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key='paste your api key here'`)
     .then(response => response.json())
     .then(data => {
         setShow(data.results);
