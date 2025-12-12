@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
+body{
+  background-repeat:no-repeat;
+  background-size:100% 100vh;
+  background-color:black;
+
+  transition: background-image 1s ease-in-out;
+
+
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;  
+  
+}
+.leftnav{
+  display:flex;
+  gap:20px;
+  margin-left:20px ;
+  font-size: 30px;
+  color:white;
+
+}
+.rightnav{
+  display:flex;
+  gap:20px;
+  font-size:30px;
+}
+.navbutton{
+  background-color: transparent;
+  border: none;
+  color:#e5e5e5;
+  cursor: pointer;
+  font-size:14px;
+}
+
+.front-screen{
+  position:absolute;
+  top:15%;
+  left:5%;
+  max-width: 40%;
+  color:white;
+  transition:text 1s ease-in-out;
+
+
+
+}
+
+.play{
+  height:40px;
+  width:100px;
+  margin-right: 20px;
+  font-style: bold;
+  border:none;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+  margin-top: 10px;
+}
+
+.info{
+  height:40px;
+  width:100px;
+  margin-right: 20px;
+  font-style: bold;
+  border:none;
+  border-radius: 5px;
+  background-color: rgb(119, 119, 119);
+  color:white;
+  margin-top:10px;
+}  
+
+.overview{
+  font-size: 15px;
+}
+
+.title{
+  font-size: 60px;
+  font-family: Bebas Neue;
+}
