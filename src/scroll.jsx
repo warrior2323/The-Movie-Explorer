@@ -19,7 +19,7 @@ const [actionMoviePoster,setActionMoviePoster] = useState([])
 
 
 
-useEffect(()=>{fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eea241ecf85381fca961655918e8348a`)
+useEffect(()=>{fetch(`https://api.themoviedb.org/3/movie/popular?api_key='paste your api key here`)
     .then(response => response.json())
     .then(data => {
         setShows(shows=> data.results)
@@ -27,7 +27,7 @@ useEffect(()=>{fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eea241e
     })
     .catch(error => console.error('Error:',error));},[] )  
 
-useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key=eea241ecf85381fca961655918e8348a&with_genres=53`)
+useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key='paste your api key here'&with_genres=53`)
     .then(response => response.json())
     .then(data => {
         setThrillerMovie(thrillerMovie => data.results)
@@ -35,7 +35,7 @@ useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key=eea241
     })
     .catch(error => console.error('Error:',error));},[] )  
 
-useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key=eea241ecf85381fca961655918e8348a&with_genres=53`)
+useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key='paste your api key here'&with_genres=53`)
     .then(response => response.json())
     .then(data => {
         setActionMovie(actionMovie => data.results)
@@ -43,7 +43,7 @@ useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key=eea241
     })
     .catch(error => console.error('Error:',error));},[] )  
 
-useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key=eea241ecf85381fca961655918e8348a&with_genres=28`)
+useEffect(()=>{fetch(`https://api.themoviedb.org/3/discover/movie?api_key='paste your api key here'&with_genres=28`)
     .then(response => response.json())
     .then(data => {
         setThrillerMovie(thrillerMovie => data.results)
