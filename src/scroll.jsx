@@ -59,7 +59,7 @@ function handleClick(value){
     })
 }
 
-useEffect(()=>{setPopulerPoster(shows.map(value => <img key={value.id} onClick={()=>{handleClick(value)} }className="posters w-[200px] h-[200px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 border-radius-10px" src = {`https://image.tmdb.org/t/p/original${value.poster_path}`} id="trending"/>));},[shows])
+useEffect(()=>{setPopulerPoster(shows.map(value => <img key={value.id} onClick={()=>{handleClick(value)} } className="posters w-[200px] h-[200px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 border-radius-10px" src = {`https://image.tmdb.org/t/p/original${value.poster_path}`} id="trending"/>));},[shows])
 useEffect(()=>{setThrillerMoviePoster(thrillerMovie.map(value => <img key={value.id} onClick={()=>{handleClick(value)} }className="posters w-[200px] h-[200px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 border-radius-10px" src = {`https://image.tmdb.org/t/p/original${value.poster_path}`} id="trending"/>));},[thrillerMovie])
 useEffect(()=>{setActionMoviePoster(actionMovie.map(value => <img key={value.id} onClick={()=>{handleClick(value)} }className="posters w-[200px] h-[200px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300 border-radius-10px" src = {`https://image.tmdb.org/t/p/original${value.poster_path}`} id="trending"/>));},[actionMovie])
 

@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Window from "./window"
 import Scroll from "./scroll"
 import About from "./about"
+import Search from "./Search"
 
 import Home from "./Home"
 import { Children } from "react";
@@ -14,7 +15,12 @@ const router=createBrowserRouter([
   {
     path:"/about/:id",
     element:<About/>
-  }]
+  },
+{
+  path:"/search",
+  element:<Search/>
+}]
+
 
 )
 
