@@ -1,6 +1,7 @@
 import { useLocation , useNavigate } from "react-router-dom";
 import {useEffect , useState} from 'react'
 import Navbar from "./Navbar"
+const apiKey = import.meta.env.VITE_API_KEY;
 export default function Search(){
     const location=useLocation();
     const navigate=useNavigate();
@@ -10,7 +11,7 @@ export default function Search(){
 
 
 
-    useEffect(()=>{fetch(`https://api.themoviedb.org/3/search/movie?api_key=eea241ecf85381fca961655918e8348a&query=${title}`)
+    useEffect(()=>{fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${title}`)
     .then(response => response.json())
     .then(data => {
         setMovieData(movieData => data.results)

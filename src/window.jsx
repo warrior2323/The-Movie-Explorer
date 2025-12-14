@@ -1,11 +1,11 @@
 import React from "react"
-
+const apiKey = import.meta.env.VITE_API_KEY;
 export default function Window(){
 const [ show , setShow ]=React.useState([])
 const [index , setIndex] = React.useState(0)
 
 React.useEffect(()=>{
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key='paste your api key here'`)
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
     .then(response => response.json())
     .then(data => {
         setShow(data.results);
